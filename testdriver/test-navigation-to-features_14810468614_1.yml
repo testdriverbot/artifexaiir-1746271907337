@@ -1,0 +1,15 @@
+version: 4.2.29
+session: 681603261fa2828781b5118b
+steps:
+  - prompt: Click on "ویژگی‌ها" section.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: ویژگی‌ها
+        description: section header labeled ویژگی‌ها
+        action: click
+  - prompt: Assert that the features section is displayed.
+    commands:
+      - command: assert
+        expect: the "ویژگی‌ها" section is displayed on the webpage
