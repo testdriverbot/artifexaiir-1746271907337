@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 68160326d3d7a290cbabad3d
+steps:
+  - prompt: Click on "تولید تصویر".
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: تولید تصویر
+        description: button for generating images from descriptions
+        action: click
