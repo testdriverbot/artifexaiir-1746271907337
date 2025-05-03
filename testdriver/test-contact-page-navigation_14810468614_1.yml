@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 68160326d3d7a290cbabad43
+steps:
+  - prompt: Click on "تماس با ما" link.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: تماس با ما
+        description: contact us link at the bottom of the webpage
+        action: click
+  - prompt: Assert that the contact form is displayed.
+    commands:
+      - command: assert
+        expect: >-
+          the contact form with fields for name, email, phone number, subject,
+          and message is visible
