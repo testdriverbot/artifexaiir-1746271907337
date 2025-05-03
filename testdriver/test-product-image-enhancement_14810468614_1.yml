@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 68160326d3d7a290cbabad3f
+steps:
+  - prompt: Click on "عکاسی پیشرفته محصول".
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: عکاسی پیشرفته محصول
+        description: feature card for advanced product photography
+        action: click
